@@ -1,0 +1,47 @@
+---
+const reasons = [
+	{
+		title: "One Point of Contact",
+		description: "No getting passed around departments.",
+	},
+	{
+		title: "Affordable & Practical",
+		description: "Solutions that make sense for small business budgets.",
+	},
+	{
+		title: "Fast Turnaround",
+		description: "We move quickly and keep things simple.",
+	},
+	{
+		title: "No Agency Jargon",
+		description: "Straightforward communication and honest advice.",
+	},
+	{
+		title: "Built for Tradies & Small Business",
+		description: "We understand how local service businesses operate.",
+		class: "md:col-span-2",
+	},
+];
+---
+
+<section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-surface-container-low border-y border-outline-variant">
+	<div class="max-w-7xl mx-auto text-center">
+		<h2 class="font-headline text-[40px] leading-[1.2] tracking-[-0.02em] font-bold text-on-surface mb-stack-md">
+			Why Small Businesses Like Working With Us
+		</h2>
+
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mt-stack-lg text-left">
+			{reasons.map((reason) => (
+				<div class:list={[
+					"bg-surface p-stack-md rounded border border-outline-variant brutalist-shadow",
+					reason.class,
+				]}>
+					<h3 class="font-headline text-2xl leading-[1.3] font-bold text-on-surface mb-base">
+						{reason.title}
+					</h3>
+					<p class="text-base leading-relaxed text-secondary">{reason.description}</p>
+				</div>
+			))}
+		</div>
+	</div>
+</section>

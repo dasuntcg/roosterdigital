@@ -1,0 +1,39 @@
+---
+const navLinks = [
+	{ label: "Services", href: "#services", active: true },
+	{ label: "Portfolio", href: "#portfolio" },
+	{ label: "Pricing", href: "#pricing" },
+	{ label: "About", href: "#about" },
+];
+---
+
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant brutalist-shadow">
+	<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+		<a href="/" class="font-headline text-2xl font-bold tracking-tight text-on-surface">
+			TRADIECORE
+		</a>
+
+		<div class="hidden md:flex gap-gutter">
+			{navLinks.map((link) => (
+				<a
+					href={link.href}
+					class:list={[
+						"text-sm font-medium transition-all duration-100 active:translate-x-0.5 active:translate-y-0.5",
+						link.active
+							? "text-primary border-b-2 border-primary pb-1"
+							: "text-secondary hover:text-primary",
+					]}
+				>
+					{link.label}
+				</a>
+			))}
+		</div>
+
+		<a
+			href="#contact"
+			class="bg-primary hover:bg-primary-container text-on-primary text-sm font-medium px-6 py-3 rounded brutalist-shadow transition-all duration-200 active:translate-x-0.5 active:translate-y-0.5 active:shadow-none"
+		>
+			GET A QUOTE
+		</a>
+	</div>
+</nav>
