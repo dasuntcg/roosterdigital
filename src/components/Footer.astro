@@ -1,8 +1,10 @@
 ---
+import logo from '../assets/logos/logo.png';
+
 const serviceLinks = [
-	{ label: "Custom Web Design", href: "#" },
-	{ label: "SEO for Tradies", href: "#" },
-	{ label: "Logo Branding", href: "#" },
+	{ label: "Custom Web Design", href: "#services" },
+	{ label: "SEO for Tradies", href: "#services" },
+	{ label: "Logo Branding", href: "#services" },
 ];
 
 const companyLinks = [
@@ -13,35 +15,53 @@ const companyLinks = [
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="w-full bg-surface-container-highest border-t-2 border-on-surface">
-	<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop py-stack-lg w-full max-w-7xl mx-auto">
-		<div class="flex flex-col gap-base">
-			<span class="font-headline text-2xl font-bold text-on-surface">TRADIECORE</span>
-			<p class="text-base text-primary">
-				&copy; {currentYear} TRADIECORE WEB DESIGN. BUILT FOR THE BOLD.
+<footer class="w-full bg-[#0C1111]">
+	<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+		<!-- Main footer row -->
+		<div class="grid grid-cols-1 md:grid-cols-4 gap-12 py-16 border-b border-white/10">
+			<!-- Brand column -->
+			<div class="md:col-span-2 flex flex-col gap-6">
+				<a href="/">
+					<img src={logo.src} alt="Rooster Digital" class="h-12 w-auto" style="filter: brightness(0) invert(1);" />
+				</a>
+				<p class="text-white/50 text-sm leading-[1.8] font-normal max-w-xs">
+					Fast, reliable and affordable websites, branding and digital support &mdash; built for tradies and small businesses.
+				</p>
+			</div>
+
+			<!-- Services links -->
+			<div class="flex flex-col gap-4">
+				<div class="text-[10px] font-medium text-white/30 uppercase tracking-[0.15em]">Services</div>
+				{serviceLinks.map((link) => (
+					<a
+						href={link.href}
+						class="text-sm text-white/50 hover:text-white font-normal transition-colors duration-200"
+					>
+						{link.label}
+					</a>
+				))}
+			</div>
+
+			<!-- Company links -->
+			<div class="flex flex-col gap-4">
+				<div class="text-[10px] font-medium text-white/30 uppercase tracking-[0.15em]">Company</div>
+				{companyLinks.map((link) => (
+					<a
+						href={link.href}
+						class="text-sm text-white/50 hover:text-white font-normal transition-colors duration-200"
+					>
+						{link.label}
+					</a>
+				))}
+			</div>
+		</div>
+
+		<!-- Bottom bar -->
+		<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 py-8">
+			<p class="text-xs text-white/25 font-normal">
+				&copy; {currentYear} Rooster Digital. All rights reserved.
 			</p>
-		</div>
-
-		<div class="flex flex-col gap-base">
-			{serviceLinks.map((link) => (
-				<a
-					href={link.href}
-					class="text-xs font-medium text-secondary hover:text-on-surface hover:underline underline-offset-8 transition-all duration-300"
-				>
-					{link.label}
-				</a>
-			))}
-		</div>
-
-		<div class="flex flex-col gap-base">
-			{companyLinks.map((link) => (
-				<a
-					href={link.href}
-					class="text-xs font-medium text-secondary hover:text-on-surface hover:underline underline-offset-8 transition-all duration-300"
-				>
-					{link.label}
-				</a>
-			))}
+			<p class="text-xs text-white/25 font-normal">Built for the bold.</p>
 		</div>
 	</div>
 </footer>

@@ -6,53 +6,53 @@
   --font-display: "Poppins", sans-serif;
   --font-label: "Poppins", sans-serif;
 
-  --color-primary: #b51b05;
-  --color-primary-container: #d9371e;
+  --color-primary: #EF462C;
+  --color-primary-container: #d63d26;
   --color-on-primary: #ffffff;
   --color-on-primary-container: #fffbff;
-  --color-primary-fixed: #ffdad4;
+  --color-primary-fixed: #ffddd8;
   --color-primary-fixed-dim: #ffb4a6;
   --color-on-primary-fixed: #3f0300;
-  --color-on-primary-fixed-variant: #900e00;
+  --color-on-primary-fixed-variant: #c03720;
   --color-inverse-primary: #ffb4a6;
 
-  --color-secondary: #5f5e5e;
-  --color-secondary-container: #e2dfde;
+  --color-secondary: #6b6b6b;
+  --color-secondary-container: #e8e8e8;
   --color-on-secondary: #ffffff;
-  --color-on-secondary-container: #636262;
-  --color-secondary-fixed: #e5e2e1;
-  --color-secondary-fixed-dim: #c8c6c5;
-  --color-on-secondary-fixed: #1c1b1b;
-  --color-on-secondary-fixed-variant: #474746;
+  --color-on-secondary-container: #5a5a5a;
+  --color-secondary-fixed: #e8e8e8;
+  --color-secondary-fixed-dim: #cccccc;
+  --color-on-secondary-fixed: #0C1111;
+  --color-on-secondary-fixed-variant: #444444;
 
-  --color-tertiary: #4d5d73;
-  --color-tertiary-container: #66768d;
+  --color-tertiary: #83B793;
+  --color-tertiary-container: #6fa37f;
   --color-on-tertiary: #ffffff;
-  --color-on-tertiary-container: #fdfcff;
-  --color-tertiary-fixed: #d3e4fe;
-  --color-tertiary-fixed-dim: #b7c8e1;
-  --color-on-tertiary-fixed: #0b1c30;
-  --color-on-tertiary-fixed-variant: #38485d;
+  --color-on-tertiary-container: #ffffff;
+  --color-tertiary-fixed: #e8f4ec;
+  --color-tertiary-fixed-dim: #c4dece;
+  --color-on-tertiary-fixed: #1a3c26;
+  --color-on-tertiary-fixed-variant: #3b6b4a;
 
-  --color-background: #fbf9f6;
-  --color-on-background: #1b1c1a;
-  --color-surface: #fbf9f6;
-  --color-on-surface: #1b1c1a;
-  --color-on-surface-variant: #5b403b;
-  --color-surface-variant: #e4e2df;
-  --color-surface-dim: #dbdad7;
-  --color-surface-bright: #fbf9f6;
-  --color-surface-tint: #b91e08;
-  --color-surface-container: #efeeeb;
-  --color-surface-container-low: #f5f3f0;
-  --color-surface-container-high: #eae8e5;
-  --color-surface-container-highest: #e4e2df;
+  --color-background: #ffffff;
+  --color-on-background: #0C1111;
+  --color-surface: #ffffff;
+  --color-on-surface: #0C1111;
+  --color-on-surface-variant: #3d3d3d;
+  --color-surface-variant: #f0f0f0;
+  --color-surface-dim: #e0e0e0;
+  --color-surface-bright: #ffffff;
+  --color-surface-tint: #EF462C;
+  --color-surface-container: #f5f5f5;
+  --color-surface-container-low: #f8f8f8;
+  --color-surface-container-high: #ebebeb;
+  --color-surface-container-highest: #e0e0e0;
   --color-surface-container-lowest: #ffffff;
-  --color-inverse-surface: #30312f;
-  --color-inverse-on-surface: #f2f0ed;
+  --color-inverse-surface: #0C1111;
+  --color-inverse-on-surface: #f5f5f5;
 
-  --color-outline: #907069;
-  --color-outline-variant: #e4beb7;
+  --color-outline: #aaaaaa;
+  --color-outline-variant: #e8e8e8;
 
   --color-error: #ba1a1a;
   --color-error-container: #ffdad6;
@@ -74,10 +74,10 @@
 }
 
 .brutalist-shadow {
-  box-shadow: 4px 4px 0px 0px #1b1c1a;
+  box-shadow: 4px 4px 0px 0px #0C1111;
 }
 
 .brutalist-shadow-hover:hover {
-  box-shadow: 4px 4px 0px 0px #1b1c1a;
+  box-shadow: 4px 4px 0px 0px #0C1111;
   transform: translate(-2px, -2px);
 }

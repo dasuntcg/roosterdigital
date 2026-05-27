@@ -1,41 +1,79 @@
-<section class="pt-[120px] pb-stack-lg px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-gutter items-center min-h-[819px]">
-	<div class="flex flex-col gap-stack-md">
-		<h1 class="font-display text-4xl md:text-[64px] md:leading-[1.1] md:tracking-[-0.04em] font-extrabold text-on-surface">
-			Simple Digital Solutions for <br />
-			<span class="text-primary">Tradies & Small Businesses</span>
-		</h1>
-		<p class="text-lg leading-relaxed text-on-surface-variant max-w-lg">
-			Fast, reliable and affordable websites, branding and digital support — built for businesses that just want things done properly.
-		</p>
-		<div class="flex gap-stack-sm pt-stack-sm flex-wrap">
-			<a
-				href="#contact"
-				class="bg-primary hover:bg-primary-container text-on-primary text-sm font-medium px-8 py-4 rounded brutalist-shadow transition-all duration-200 active:translate-x-0.5 active:translate-y-0.5 active:shadow-none"
-			>
-				Get a Free Quote
-			</a>
-			<a
-				href="#contact"
-				class="bg-surface-container border-2 border-on-surface text-on-surface hover:bg-surface-container-low text-sm font-medium px-8 py-4 rounded brutalist-shadow transition-all duration-200 active:translate-x-0.5 active:translate-y-0.5 active:shadow-none"
-			>
-				Let's Chat
-			</a>
-			<a
-				href="#portfolio"
-				class="inline-flex items-center text-primary text-sm font-medium px-4 py-4 hover:underline"
-			>
-				See Our Work
-			</a>
-		</div>
-	</div>
+<section class="pt-20 bg-white">
+	<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-20 md:py-32 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
-	<div class="relative h-[500px] w-full rounded border border-outline-variant bg-surface-container-low overflow-hidden brutalist-shadow">
-		<img
-			src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOKZxTliVOk_eP2gD8-O7nlLxGmg1hbLXFLCS9qTBqVd6pvFNMLJBcwF2e7jI5rT6PKbZHHD9Uu8ST5PuJBiIvdGbJyWdtp49W8zYtxAn_fR9p7XdgLePRVZE9inKkn86SRCcnyhkRT_Z-AdaP69ytgCvLmjABzdUtLRztrEy1TPWeJOWicRjIV6jo1v_qVtNyMbt2Vh89w8Qh69Xx2L_jtKO44UL0d6ps-ZjO3fnMYqWO_hxEfg3GSAHzaRWKwskWar4GBaQY4g"
-			alt="Australian tradesman at work on a construction site"
-			class="absolute inset-0 w-full h-full object-cover"
-			loading="eager"
-		/>
-		<div class="absolute inset-0 bg-gradient-to-t from-on-surface/50 to-transparent"></div>
+		<!-- Left: Content -->
+		<div class="flex flex-col gap-8">
+			<div class="inline-flex items-center gap-2 text-primary text-xs font-medium tracking-[0.15em] uppercase w-fit">
+				<div class="w-6 h-px bg-primary"></div>
+				Web Design Agency
+			</div>
+
+			<h1 class="font-display text-4xl md:text-[56px] md:leading-[1.1] md:tracking-[-0.02em] font-bold text-on-surface">
+				Simple Digital Solutions for
+				<span class="text-primary"> Tradies &amp; Small Businesses</span>
+			</h1>
+
+			<p class="text-xl leading-relaxed text-secondary max-w-lg font-normal">
+				Fast, reliable and affordable websites, branding and digital support &mdash; built for businesses that just want things done properly.
+			</p>
+
+			<div class="flex gap-4 flex-wrap">
+				<a
+					href="#contact"
+					class="bg-primary hover:bg-primary-container text-on-primary text-sm font-medium px-8 py-4 rounded brutalist-shadow transition-all duration-200 active:translate-x-0.5 active:translate-y-0.5 active:shadow-none"
+				>
+					Get a Free Quote
+				</a>
+				<a
+					href="#services"
+					class="border border-outline-variant text-on-surface hover:border-primary hover:text-primary text-sm font-medium px-8 py-4 rounded transition-all duration-200"
+				>
+					Our Services
+				</a>
+			</div>
+
+			<!-- Stats row -->
+			<div class="flex gap-10 pt-8 border-t border-outline-variant">
+				<div>
+					<div class="text-3xl font-semibold text-on-surface leading-none">50+</div>
+					<div class="text-xs text-secondary uppercase tracking-widest mt-2">Happy Clients</div>
+				</div>
+				<div>
+					<div class="text-3xl font-semibold text-on-surface leading-none">200+</div>
+					<div class="text-xs text-secondary uppercase tracking-widest mt-2">Projects Delivered</div>
+				</div>
+				<div>
+					<div class="text-3xl font-semibold text-primary leading-none">5&#9733;</div>
+					<div class="text-xs text-secondary uppercase tracking-widest mt-2">Average Rating</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Right: Real photo with floating badges -->
+		<div class="relative hidden md:block">
+			<img
+				src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+				alt="Web designer working on a laptop"
+				class="w-full h-[480px] object-cover rounded-xl"
+				loading="eager"
+			/>
+
+			<!-- Satisfaction badge -->
+			<div class="absolute -left-5 top-10 bg-primary text-on-primary rounded-lg px-5 py-4 brutalist-shadow">
+				<div class="text-2xl font-semibold leading-none">98%</div>
+				<div class="text-[11px] font-normal opacity-80 mt-1">Client Satisfaction</div>
+			</div>
+
+			<!-- Delivery badge -->
+			<div class="absolute -left-3 bottom-10 bg-white border border-outline-variant rounded-lg px-4 py-3 brutalist-shadow">
+				<div class="flex items-center gap-3">
+					<span class="material-symbols-outlined text-primary" style="font-size:20px;">bolt</span>
+					<div>
+						<div class="text-on-surface text-sm font-medium leading-none">Fast Delivery</div>
+						<div class="text-secondary text-[11px] mt-1">7&ndash;14 day turnaround</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
