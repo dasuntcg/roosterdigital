@@ -31,7 +31,7 @@ const currentYear = new Date().getFullYear();
 
 			<!-- Services links -->
 			<div class="flex flex-col gap-4">
-				<div class="text-[10px] font-medium text-white/30 uppercase tracking-[0.15em]">Services</div>
+				<div class="text-[10px] font-medium text-white/50 uppercase tracking-[0.15em]">Services</div>
 				{serviceLinks.map((link) => (
 					<a
 						href={link.href}
@@ -44,7 +44,7 @@ const currentYear = new Date().getFullYear();
 
 			<!-- Company links -->
 			<div class="flex flex-col gap-4">
-				<div class="text-[10px] font-medium text-white/30 uppercase tracking-[0.15em]">Company</div>
+				<div class="text-[10px] font-medium text-white/50 uppercase tracking-[0.15em]">Company</div>
 				{companyLinks.map((link) => (
 					<a
 						href={link.href}
@@ -58,10 +58,10 @@ const currentYear = new Date().getFullYear();
 
 		<!-- Bottom bar -->
 		<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 py-8">
-			<p class="text-xs text-white/25 font-normal">
+			<p class="text-xs text-white/50 font-normal">
 				&copy; {currentYear} Rooster Digital. All rights reserved.
 			</p>
-			<p class="text-xs text-white/25 font-normal">Built for the bold.</p>
+			<p class="text-xs text-white/50 font-normal">Built for the bold.</p>
 		</div>
 	</div>
 </footer>

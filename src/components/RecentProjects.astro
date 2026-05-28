@@ -1,0 +1,74 @@
+---
+import { Image } from "astro:assets";
+import zealousImg from "../assets/projects/zealous-automotive.png";
+import freshwaveImg from "../assets/projects/freshwave-cleaning.png";
+
+const projects = [
+	{
+		title: "Zealous Automotive",
+		description:
+			"A professional website for an auto repair business in Albury-Wodonga, featuring service listings, online booking, and local SEO.",
+		url: "https://zealousautomotive.com.au/",
+		image: zealousImg,
+		tags: ["Website", "SEO"],
+	},
+	{
+		title: "Freshwave Cleaning",
+		description:
+			"A clean, modern website for a residential and commercial cleaning company, with service pages, quote requests, and testimonials.",
+		url: "https://freshwavecleaning.com.au/",
+		image: freshwaveImg,
+		tags: ["Website", "Branding"],
+	},
+];
+---
+
+<section id="projects" class="py-20 md:py-28 bg-surface-container-low">
+	<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+		<!-- Section header -->
+		<div class="mb-16" data-animate="fade-up">
+			<div class="flex items-center gap-3 mb-6">
+				<div class="w-6 h-px bg-primary"></div>
+				<span class="text-primary text-xs font-medium tracking-[0.15em] uppercase">Recent Projects</span>
+			</div>
+			<h2 class="font-headline text-4xl leading-[1.2] tracking-[-0.01em] font-semibold text-on-surface">
+				Work We're Proud Of
+			</h2>
+		</div>
+
+		<!-- Projects grid -->
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+			{projects.map((project, i) => (
+				<a data-animate="fade-up" data-animate-delay={`${i * 150 + 100}`}
+					href={project.url}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="group bg-white rounded border border-outline-variant brutalist-shadow-hover transition-all duration-300 overflow-hidden flex flex-col"
+				>
+					<div class="overflow-hidden">
+						<Image
+							src={project.image}
+							alt={project.title}
+							class="w-full h-72 object-cover object-top group-hover:scale-105 transition-transform duration-500"
+							loading="lazy"
+						/>
+					</div>
+					<div class="p-8 flex-1 flex flex-col">
+						<div class="flex items-center gap-2 mb-4">
+							{project.tags.map((tag) => (
+								<span class="text-xs font-medium tracking-wide uppercase px-3 py-1 rounded bg-tertiary-container text-on-tertiary-container">
+									{tag}
+								</span>
+							))}
+						</div>
+						<h3 class="font-headline text-2xl font-semibold text-on-surface mb-3">{project.title}</h3>
+						<p class="text-base leading-[1.8] text-secondary font-normal mb-4">{project.description}</p>
+						<span class="mt-auto inline-flex items-center gap-1 text-primary text-sm font-medium group-hover:underline underline-offset-4">
+							Visit site &rarr;
+						</span>
+					</div>
+				</a>
+			))}
+		</div>
+	</div>
+</section>

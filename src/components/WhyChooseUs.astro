@@ -28,13 +28,13 @@ const reasons = [
 ];
 ---
 
-<section class="py-20 md:py-28 bg-tertiary-fixed">
+<section class="py-20 md:py-28 bg-surface-container-low">
 	<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
 		<!-- Header -->
-		<div class="mb-16">
+		<div class="mb-16" data-animate="fade-up">
 			<div class="flex items-center gap-3 mb-6">
-				<div class="w-6 h-px bg-tertiary"></div>
-				<span class="text-tertiary text-xs font-medium tracking-[0.15em] uppercase">Our Difference</span>
+				<div class="w-6 h-px bg-tertiary-container"></div>
+				<span class="text-on-surface-variant text-xs font-medium tracking-[0.15em] uppercase">Our Difference</span>
 			</div>
 			<h2 class="font-headline text-4xl leading-[1.2] tracking-[-0.01em] font-semibold text-on-surface">
 				Why Small Businesses<br />Like Working With Us
@@ -43,10 +43,10 @@ const reasons = [
 
 		<!-- Reasons grid -->
 		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-			{reasons.map((reason) => (
-				<div class="bg-white border border-tertiary-fixed-dim rounded p-8 brutalist-shadow-hover transition-all duration-300 group">
-					<div class="w-10 h-10 rounded bg-tertiary/15 flex items-center justify-center mb-6 group-hover:bg-tertiary transition-all duration-300">
-						<span class="material-symbols-outlined text-tertiary group-hover:text-on-tertiary transition-colors duration-300" style="font-size:20px;">{reason.icon}</span>
+			{reasons.map((reason, i) => (
+				<div data-animate="fade-up" data-animate-delay={`${i * 100 + 100}`} class="bg-white border border-tertiary-fixed-dim rounded p-8 brutalist-shadow-hover transition-all duration-300 group">
+					<div class="w-10 h-10 rounded bg-tertiary-container/20 flex items-center justify-center mb-6 group-hover:bg-tertiary-container transition-all duration-300">
+						<span class="material-symbols-outlined text-on-surface-variant group-hover:text-on-tertiary-container transition-colors duration-300" style="font-size:20px;">{reason.icon}</span>
 					</div>
 					<h3 class="font-headline text-lg font-semibold text-on-surface mb-3">{reason.title}</h3>
 					<p class="text-base leading-[1.8] text-secondary font-normal">{reason.description}</p>

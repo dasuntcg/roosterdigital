@@ -2,7 +2,7 @@
 	<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-20 md:py-32 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
 		<!-- Left: Content -->
-		<div class="flex flex-col gap-8">
+		<div class="flex flex-col gap-8" data-animate="fade-right">
 			<div class="inline-flex items-center gap-2 text-primary text-xs font-medium tracking-[0.15em] uppercase w-fit">
 				<div class="w-6 h-px bg-primary"></div>
 				Web Design Agency
@@ -43,14 +43,14 @@
 					<div class="text-xs text-secondary uppercase tracking-widest mt-2">Projects Delivered</div>
 				</div>
 				<div>
-					<div class="text-3xl font-semibold text-primary leading-none">5&#9733;</div>
+					<div class="text-3xl font-semibold text-on-surface leading-none">5&#9733;</div>
 					<div class="text-xs text-secondary uppercase tracking-widest mt-2">Average Rating</div>
 				</div>
 			</div>
 		</div>
 
 		<!-- Right: Real photo with floating badges -->
-		<div class="relative hidden md:block">
+		<div class="relative hidden md:block" data-animate="fade-left" data-animate-delay="200">
 			<img
 				src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
 				alt="Web designer working on a laptop"
@@ -59,15 +59,15 @@
 			/>
 
 			<!-- Satisfaction badge -->
-			<div class="absolute -left-5 top-10 bg-primary text-on-primary rounded-lg px-5 py-4 brutalist-shadow">
+			<div class="absolute -left-5 top-10 bg-primary text-on-primary rounded-lg px-5 py-4 brutalist-shadow" data-animate="scale-in" data-animate-delay="600">
 				<div class="text-2xl font-semibold leading-none">98%</div>
 				<div class="text-[11px] font-normal opacity-80 mt-1">Client Satisfaction</div>
 			</div>
 
 			<!-- Delivery badge -->
-			<div class="absolute -left-3 bottom-10 bg-white border border-outline-variant rounded-lg px-4 py-3 brutalist-shadow">
+			<div class="absolute -left-3 bottom-10 bg-tertiary-container border border-tertiary-fixed-dim rounded-lg px-4 py-3 brutalist-shadow" data-animate="scale-in" data-animate-delay="800">
 				<div class="flex items-center gap-3">
-					<span class="material-symbols-outlined text-primary" style="font-size:20px;">bolt</span>
+					<span class="material-symbols-outlined text-on-tertiary-container" style="font-size:20px;">bolt</span>
 					<div>
 						<div class="text-on-surface text-sm font-medium leading-none">Fast Delivery</div>
 						<div class="text-secondary text-[11px] mt-1">7&ndash;14 day turnaround</div>

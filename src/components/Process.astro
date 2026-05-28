@@ -10,11 +10,11 @@ const steps = [
 <section class="py-20 md:py-28 bg-white">
 	<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
 		<!-- Header -->
-		<div class="text-center mb-20">
+		<div class="text-center mb-20" data-animate="fade-up">
 			<div class="flex items-center justify-center gap-3 mb-6">
-				<div class="w-6 h-px bg-tertiary"></div>
-				<span class="text-tertiary text-xs font-medium tracking-[0.15em] uppercase">How It Works</span>
-				<div class="w-6 h-px bg-tertiary"></div>
+				<div class="w-6 h-px bg-tertiary-container"></div>
+				<span class="text-on-surface-variant text-xs font-medium tracking-[0.15em] uppercase">How It Works</span>
+				<div class="w-6 h-px bg-tertiary-container"></div>
 			</div>
 			<h2 class="font-headline text-4xl leading-[1.2] tracking-[-0.01em] font-semibold text-on-surface">
 				Simple Process. No Headaches.
@@ -26,12 +26,12 @@ const steps = [
 			<!-- Connector line (desktop only) -->
 			<div class="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-px bg-tertiary-fixed-dim z-0"></div>
 
-			{steps.map((step) => (
-				<div class="relative z-10 flex flex-col items-center text-center group">
-					<div class="w-16 h-16 rounded-full border border-tertiary bg-white flex items-center justify-center mb-6 brutalist-shadow group-hover:bg-tertiary transition-all duration-300">
-						<span class="material-symbols-outlined text-tertiary group-hover:text-on-tertiary transition-colors duration-300" style="font-size:22px;">{step.icon}</span>
+			{steps.map((step, i) => (
+				<div data-animate="fade-up" data-animate-delay={`${i * 150 + 100}`} class="relative z-10 flex flex-col items-center text-center group">
+					<div class="w-16 h-16 rounded-full border border-tertiary-container bg-white flex items-center justify-center mb-6 brutalist-shadow group-hover:bg-tertiary-container transition-all duration-300">
+						<span class="material-symbols-outlined text-on-surface-variant group-hover:text-on-tertiary-container transition-colors duration-300" style="font-size:22px;">{step.icon}</span>
 					</div>
-					<div class="text-[10px] font-medium text-tertiary tracking-[0.2em] uppercase mb-2">Step {step.number}</div>
+					<div class="text-[10px] font-medium text-on-surface-variant tracking-[0.2em] uppercase mb-2">Step {step.number}</div>
 					<h3 class="font-headline text-lg font-semibold text-on-surface mb-3">{step.title}</h3>
 					<p class="text-sm leading-[1.8] text-secondary font-normal max-w-[160px]">{step.description}</p>
 				</div>
